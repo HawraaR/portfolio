@@ -1,26 +1,42 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* Surface & Paper Colors */
+  --color-paper-bg: #F8F6F0;
+  --color-paper-card: #FFFFFF;
+  --color-paper-border: #EAE5D9;
+  --color-paper-border-hover: #D8D1C2;
+  
+  /* Brand Accents */
+  --color-terracotta: #8C3A2B;
+  --color-terracotta-hover: #732E22;
+  --color-terracotta-light: #F8ECE9;
+  
+  /* Badges & Tags */
+  --color-sage-bg: #E8EFE9;
+  --color-sage-text: #2D5A39;
+  --color-sage-border: #C8DEC9;
+
+  /* Ink & Text */
+  --color-ink-heading: #1C1917;
+  --color-ink-body: #57534E;
+  --color-ink-muted: #78716C;
+
+  /* Editorial Fonts */
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Global Base Styles */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-paper-bg);
+  color: var(--color-ink-body);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-serif {
+  font-family: var(--font-serif);
 }
