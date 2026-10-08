@@ -20,7 +20,7 @@ export function Hero({ heroData, projectsCount }: HeroProps) {
   });
 
   return (
-    <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center pt-6 sm:pt-8 lg:pt-10 pb-8 sm:pb-10">
+    <section className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center pt-6 sm:pt-8 lg:pt-10 pb-5 sm:pb-7">
       {/* Left Column: Headline, Subhead & CTAs */}
       <div className="lg:col-span-7 space-y-8">
         {/* Editorial Eyebrow */}

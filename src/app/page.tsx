@@ -2,6 +2,7 @@ import { portfolioData } from "@/data/portfolioData";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { ProjectsSection } from "@/components/ProjectsSection";
+import { WorkspaceSection } from "@/components/WorkspaceSection";
 
 export default function Home() {
   return (
@@ -13,6 +14,10 @@ export default function Home() {
           projectsCount={portfolioData.projects.length}
         />
         <ProjectsSection projects={portfolioData.projects} />
+        <WorkspaceSection
+          skills={portfolioData.skills}
+          bookshelf={portfolioData.bookshelf}
+        />
       </main>
     </div>
   );

@@ -7,9 +7,9 @@ interface ProjectsSectionProps {
 
 export function ProjectsSection({ projects }: ProjectsSectionProps) {
   return (
-    <section id="projects" className="pt-8 sm:pt-10 pb-14 sm:pb-16 border-t border-[#EAE5D9]">
+    <section id="projects" className="pt-5 sm:pt-7 pb-8 sm:pb-10 border-t border-[#EAE5D9]">
       {/* Section Title Header */}
-      <div className="max-w-2xl mb-8 sm:mb-10 space-y-3">
+      <div className="max-w-2xl mb-5 sm:mb-7 space-y-2.5">
         {/* Editorial Eyebrow */}
         <div className="flex items-center gap-2.5 text-xs font-mono tracking-widest text-[#78716C] uppercase">
           <span className="text-[#8C3A2B] font-bold text-sm">—</span>
