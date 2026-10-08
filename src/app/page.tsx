@@ -3,6 +3,8 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { ProjectsSection } from "@/components/ProjectsSection";
 import { WorkspaceSection } from "@/components/WorkspaceSection";
+import { ContactSection } from "@/components/ContactSection";
+import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -18,7 +20,9 @@ export default function Home() {
           skills={portfolioData.skills}
           bookshelf={portfolioData.bookshelf}
         />
+        <ContactSection contactData={portfolioData.contact} />
       </main>
+      <Footer name={portfolioData.hero.bioWidget.name} />
     </div>
   );
 }
